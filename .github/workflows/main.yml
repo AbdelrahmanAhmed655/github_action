@@ -13,3 +13,9 @@ jobs:
         steps: 
             - name: print welcome message
               run: echo "wecome to action" 
+
+            - name: checkout of repo
+              uses: actions/checkout@v6.0.2
+            
+            - name: list repo files
+              run: ls -la
