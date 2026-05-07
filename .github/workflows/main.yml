@@ -1,0 +1,15 @@
+name: Star event workflow
+
+on:
+  push: 
+    branches:
+        - main
+
+jobs:
+    #that the name of jobs
+    example-jop:
+        runs-on: ubuntu-latest
+        
+        steps: 
+            - name: print welcome message
+              run: echo "wecome to action" 
