@@ -2,10 +2,10 @@
   "name": "alice-app",
   "version": "1.0.0",
   "description": "Simple variables and console.log test",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node index.js"
+    "start": "node src/app.js",
+    "test": "node src/app.js"
   },
   "author": "",
   "license": "MIT"
