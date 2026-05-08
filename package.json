@@ -1,0 +1,12 @@
+{
+  "name": "alice-app",
+  "version": "1.0.0",
+  "description": "Simple variables and console.log test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
