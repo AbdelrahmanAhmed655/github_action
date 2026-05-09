@@ -4,5 +4,4 @@ var isActive = true;
 
 console.log(name, age, isActive);
 
-
-
+console.log(name);
