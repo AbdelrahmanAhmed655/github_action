@@ -1,0 +1,15 @@
+on:
+    workflow_dispatch:
+
+jobs:
+    job_1:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                npm install
+                npm run build
+              # that meaning the command run in the directory ./temp
+              working-directory: ./temp
+              shell: bash # the default shell that inside the pwsh , python , cmd
+            - run: print %ENV
+              shell: perl {0} # open the perl shell  
