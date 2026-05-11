@@ -1,0 +1,12 @@
+on:
+    workflow_dispatch:
+jobs:
+    actions_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: say hello
+              uses: .github/action/Greeting@v1
+              with: 
+                name: ahmed
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
