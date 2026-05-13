@@ -1,0 +1,11 @@
+on: 
+  workflow_dispatch:
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+  - name: Run the Deploymemt Script
+    run: ./deploy.sh
+  - name: Cleanup on failure
+    run: echo "Cleanup failure"
+    if: failure()
+    # always() -> always
