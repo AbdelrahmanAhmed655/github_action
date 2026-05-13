@@ -5,6 +5,7 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
+    # this found if the funcation deprecated
       - run: |
           deprecated=true
           if [[ "$deprecated" == "true" ]]; then
